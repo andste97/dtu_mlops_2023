@@ -1,3 +1,7 @@
+# generated files during exercises
+output/
+
+
 # git files
 .gitconfig
 

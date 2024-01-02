@@ -49,9 +49,9 @@ def train(lr):
             epoch_loss = running_loss/len(train_loader)
             print(f"Training loss: {epoch_loss}")
             train_losses.append(epoch_loss)
-    torch.save(model, "./checkpoint.pth")
+    torch.save(model, "./output/checkpoint.pth")
     plt.plot(train_losses, [i for i in range(epochs)])
-    plt.savefig("./training_losses.png")
+    plt.savefig("./output/training_losses.png")
 
 @click.command()
 @click.argument("model_checkpoint")
